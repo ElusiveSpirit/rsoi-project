@@ -1,0 +1,13 @@
+language: python
+python:
+- '3.6'
+env:
+  global:
+  - PIPENV_VENV_IN_PROJECT=1
+  - PIPENV_IGNORE_VIRTUALENVS=1
+install: make setup
+script: make test
+deploy:
+  provider: heroku
+  api_key:
+    secure: e1VITeKiGocEFx0GyMAq7LYsSBXyQAz1I+weVNupJCW7zztumiHYCm63B9BtcJqlnktQ+PE6l/jL9Ynzq+pP5VdkD0G/cuHiIA4YT7tAijgBPf7CBy7WTDM7SggjCCDtCjcIcrda1wtEyo9d4feAcWIxY/VUB18U2/RATenWGwt8HvATqbp6GAD3tuQu/MavN9+SirHGLO1YMmM3y4x5Ckjd3A/5eJC7CHlCU4638ByMBxgeJGAlOp1zKgSG+WZJtcnjXPf+w3s43E+ncz1W32pds+Ku2GE4bmnwnW5l4GwoVGskj9NkpakkLEx2a8RwVi+gsRr1ubjMtRctV4blc2MvQnT7oR/uDNba+EwKHyYOzORTNpbWsG6GNo5jNdq+SWkT/iFR0h9ECtYLY8OPPhMNw1Wvk960ANnQF+TfR9/BYFthT9JlI9gWL93xf+hFxiVQL1pls1y8IPHMywkKLq/2567zUJpcqHma409CCCx2q0TmoaBVXlLSNa9YQt/S76sv65YNtEygCUn9Brcbd4chGrdq1y09BwhxFTYlAoyFVdBuvA8n3sfZWICU82Zx/wfxrop4zbI+tJlf67+O2If4FLj3PLw2RxyXBidXonWL0r64rCC8+5+2gs+y/T9z+bk5PRpiBYRk9lxmj4CGa7Qf2G614zVmcDpdZYXCnfM=
