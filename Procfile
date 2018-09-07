@@ -1,0 +1,1 @@
+web: pipenv run gunicorn app.wsgi:app --worker-class aiohttp.GunicornWebWorker
