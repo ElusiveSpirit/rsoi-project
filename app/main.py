@@ -6,7 +6,7 @@ from .utils import load_config
 from .consts import APP_ROOT
 
 
-async def init_app():
+def init_app():
     app = web.Application()
     setup_routes(app)
     app.on_shutdown.append(shutdown)

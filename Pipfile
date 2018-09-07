@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 aiohttp = "*"
 pyyaml = "*"
+gunicorn = "*"
 
 [dev-packages]
 pytest-aiohttp = "*"

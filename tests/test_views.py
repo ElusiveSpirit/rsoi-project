@@ -5,7 +5,7 @@ from app.main import init_app
 
 class TestIndexView(AioHTTPTestCase):
     async def get_application(self):
-        return await init_app()
+        return init_app()
 
     @unittest_run_loop
     async def test_example(self):
